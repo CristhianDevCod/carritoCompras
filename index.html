@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <div class="logo"></div>
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>De gusta tu paladar</h2>
+                                <p>Todos los platillos con descuento.</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría comer?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Las mejores ideas de platos deliciosos,<br>
+                        para que te alimentes mejor.</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Somos los mejores <br>
+                        En la preparación de alimentos.</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Tu comida preferida en tiempo récord. <br>
+                        El sabor más delicioso.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Cursos En Línea</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Risotto de Champiñones</h4>
+                        <p>Mario Rossi</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$15.99  <span class="u-pull-right ">$12.99</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Filete de Salmón a la parrilla</h4>
+                            <p>Ana López</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$18.50  <span class="u-pull-right ">$15.75</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Espaguetis Carbonara</h4>
+                            <p>Luca Bianchi</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.75  <span class="u-pull-right ">$10.50</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Ensalada César</h4>
+                        <p>María Garcia</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$8.99  <span class="u-pull-right ">$7.25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Paella valenciana</h4>
+                            <p>Carlos Martínez</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$22.50  <span class="u-pull-right ">$18.50</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Tacos de Carnitas</h4>
+                            <p>Javier Sáchez</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$10.25  <span class="u-pull-right ">$8.50</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Sushi Variado</h4>
+                        <p>Yuki Tanaka</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$24.99  <span class="u-pull-right ">$20.50</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Pizza Margherita</h4>
+                            <p>Guiseppe Conti</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$14.50  <span class="u-pull-right ">$11.75</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso4.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Pollo al Curry</h4>
+                            <p>Priya patel</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$16.75  <span class="u-pull-right ">$13.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Hamburguesa Clásica</h4>
+                            <p>John Smith</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$9.99  <span class="u-pull-right ">$8.25</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Lomo Saltado</h4>
+                                <p>Diego Herrera</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$17.25  <span class="u-pull-right ">$14.25</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Tiramisú</h4>
+                                <p>Sofia Russo</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$6.50  <span class="u-pull-right ">$5.25</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Chef</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
